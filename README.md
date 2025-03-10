@@ -85,7 +85,7 @@ Ensure you have the following installed on your system:
 
 ### **Clone the Repository**
 ```sh
-git clone https://github.com/your-username/GLC.git
+git clone https://github.com/your-username/glc.git
 cd glorylife-elearning
 ```
 
