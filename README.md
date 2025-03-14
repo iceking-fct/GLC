@@ -83,58 +83,101 @@ Ensure you have the following installed on your system:
 
 
 
+
 ### **Clone the Repository**
 ```sh
+
 git clone https://github.com/your-username/glc.git
 cd glorylife-elearning
 ```
+
 
 ### **Backend Setup**
 1. Navigate to the backend directory:
    ```sh
    cd backend
+
    ```
 2. Install dependencies:
    ```sh
    npm install
+
    ```
 3. Create a **.env** file and add required environment variables (DB connection, JWT secret, etc.).
+
 4. Start the backend server:
    ```sh
    npm run dev
    ```
+
+
 
 ### **Frontend Setup**
 1. Navigate to the frontend directory:
    ```sh
    cd frontend
    ```
+
 2. Install dependencies:
    ```sh
    npm install
    ```
+
 3. Start the frontend application:
    ```sh
    npm start
    ```
 
+
+
 ## API Documentation
+
 The backend exposes a set of RESTful APIs for user authentication, course management, and progress tracking. API documentation will be available via **Postman** or **Swagger**.
 
 ## Contribution Guidelines
+
 1. Fork the repository.
+
 2. Create a new branch:
    ```sh
    git checkout -b feature-name
+
    ```
 3. Commit your changes:
    ```sh
    git commit -m "Added a new feature"
+
    ```
 4. Push to GitHub and create a pull request.
+
 
 ## License
 This project is licensed under the **MIT License**.
 
 ## Contact
-For any inquiries, feel free to reach out at [miracleamajama14@gmail.com]
+For any inquiries, feel free to reach out at [miracleamajama14@gmail.com] 
+
+
+
+
+/GLC
+│── README.md
+│── backend/
+│   │── node_modules/
+│   │── package-lock.json
+│   │── package.json
+│   │── .env  👈 (To store environment variables like MongoDB URI)
+│   │── server.js
+│   │── config/  
+│   │   └── db.js  👈 (Handles MongoDB connection)
+│   │── models/  
+│   │   ├── User.js  👈 (User Schema & Model)
+│   │── routes/  
+│   │   ├── authRoutes.js  👈 (Handles signup & login API)
+│   │── controllers/  
+│   │   ├── authController.js  👈 (Handles auth logic)
+│   │── middleware/
+│   │   ├── authMiddleware.js  👈 (JWT auth verification)
+│   │── utils/
+│   │   ├── generateToken.js  👈 (Handles JWT token generation)
+
